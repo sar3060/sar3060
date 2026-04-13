@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBlog - 个人技术博客</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-terminal"></i>
+                <span>TechBlog</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#articles">文章</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>探索技术的无限可能</h1>
+                <p>分享编程心得、技术教程和行业洞察</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="title">terminal</span>
+                    </div>
+                    <div class="code-content">
+                        <p><span class="prompt">user@techblog:~$</span> <span class="command">echo "Hello, World!"</span></p>
+                        <p class="output">Hello, World!</p>
+                        <p><span class="prompt">user@techblog:~$</span> <span class="command">cat dreams.txt</span></p>
+                        <p class="output">Building the future, one line at a time...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#articles"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <section id="articles" class="articles">
+        <div class="container">
+            <h2 class="section-title">最新文章</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-image">
+                        <div class="gradient-bg"></div>
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="article-content">
+                        <span class="category">Python</span>
+                        <h3>Python异步编程入门指南</h3>
+                        <p>深入理解asyncio模块，掌握异步编程的核心概念和实践技巧...</p>
+                        <div class="article-footer">
+                            <span class="date">2024-01-15</span>
+                            <a href="#" class="read-more">阅读更多</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-image">
+                        <div class="gradient-bg bg-2"></div>
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="article-content">
+                        <span class="category">云计算</span>
+                        <h3>Docker容器化部署实战</h3>
+                        <p>从零开始学习Docker，掌握容器化部署的最佳实践...</p>
+                        <div class="article-footer">
+                            <span class="date">2024-01-12</span>
+                            <a href="#" class="read-more">阅读更多</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-image">
+                        <div class="gradient-bg bg-3"></div>
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="article-content">
+                        <span class="category">数据库</span>
+                        <h3>PostgreSQL性能优化技巧</h3>
+                        <p>深入分析数据库性能瓶颈，学习索引优化和查询调优...</p>
+                        <div class="article-footer">
+                            <span class="date">2024-01-10</span>
+                            <a href="#" class="read-more">阅读更多</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-image">
+                        <div class="gradient-bg bg-4"></div>
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="article-content">
+                        <span class="category">安全</span>
+                        <h3>Web安全防护最佳实践</h3>
+                        <p>了解常见的Web安全漏洞，学习如何保护你的应用程序...</p>
+                        <div class="article-footer">
+                            <span class="date">2024-01-08</span>
+                            <a href="#" class="read-more">阅读更多</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>关于我</h2>
+                    <p>我是一名全栈开发者，热爱探索新技术，致力于用代码创造价值。</p>
+                    <p>多年来，我专注于Web开发、云计算和数据分析领域，积累了丰富的实战经验。</p>
+                    <div class="skills">
+                        <h3>技术栈</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="你的姓名" id="name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="你的邮箱" id="email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="留言内容" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">发送消息</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <i class="fas fa-terminal"></i>
+                    <span>TechBlog</span>
+                </div>
+                <p>用代码构建未来，用文字记录思考</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 TechBlog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
